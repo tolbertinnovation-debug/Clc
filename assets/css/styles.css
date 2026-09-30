@@ -1101,3 +1101,12 @@ img.monogram { object-fit: cover; object-position: center; background: var(--pap
 }
 @media (max-width: 340px) { .brand-text strong { font-size: .95rem; } .brand .brand-shield { display: none; } }
 @media (max-width: 374px) { .brand-text strong { font-size: .94rem; } .nav-toggle { gap: 8px; padding-left: 12px; } }
+/* Never let the brand push the menu button off-screen (wider real fonts) */
+.header-inner { min-width: 0; }
+@media (max-width: 1180px) {
+  .brand { flex: 0 1 auto; min-width: 0; }
+  .brand-text { min-width: 0; overflow: hidden; }
+  .brand-text strong { overflow: hidden; text-overflow: ellipsis; }
+  .nav-toggle { flex: none; }
+}
+@media (max-width: 420px) { .brand-text strong { font-size: clamp(.8rem, 3.9vw, 1.04rem); letter-spacing: 0; } .brand { gap: 7px; } }

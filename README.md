@@ -45,3 +45,7 @@ Prayer requests, class registration and contact messages open WhatsApp with the 
 1. In the repository go to **Settings → Pages**.
 2. Under **Build and deployment**, choose **Deploy from a branch**, pick the branch, and set the folder to `/ (root)`.
 3. Save. The site goes live at `https://<username>.github.io/<repo>/` within a minute or two.
+
+## After editing CSS or JavaScript
+
+Run `./stamp-assets.sh`. It updates the `?v=` version on the stylesheet and script links in every page, so visitors' browsers load the new files instead of an old saved copy.
