@@ -759,6 +759,38 @@ select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px r
   .bishop-photo::after { top: auto; left: 0; width: auto; height: 6px; background: linear-gradient(90deg, var(--red), var(--gold), var(--blue)); }
 }
 
+/* Video feature */
+.video-section {
+  color: #fff; overflow: hidden;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(200,16,46,.4), transparent 50%),
+    radial-gradient(ellipse at 10% 90%, rgba(26,63,176,.55), transparent 55%),
+    var(--navy);
+}
+.video-section .lead { color: rgba(255,255,255,.86); }
+.video-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 6vw, 88px); align-items: center; }
+.video-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 6px; }
+.video-meta span { font-size: .8rem; font-weight: 700; padding: 7px 12px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16); }
+.video-meta span:first-child { background: var(--red); border-color: var(--red); }
+.phone-frame {
+  position: relative; width: min(340px, 100%); margin-inline: auto; aspect-ratio: 9 / 16;
+  border-radius: 38px; padding: 10px; background: #070f24;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.12), 0 50px 90px -30px rgba(0,0,0,.8), 0 0 80px -20px rgba(244,180,0,.35);
+  transform: rotate(-2deg); transition: transform .5s var(--ease);
+}
+.phone-frame:hover, .phone-frame.is-playing { transform: none; }
+.phone-frame video { width: 100%; height: 100%; object-fit: cover; border-radius: 30px; background: #000; display: block; }
+.play-btn {
+  position: absolute; left: 50%; top: 50%; width: 86px; height: 86px; margin: -43px 0 0 -43px; border: 0; border-radius: 50%;
+  background: var(--gold); cursor: pointer; box-shadow: 0 0 0 0 rgba(244,180,0,.6); animation: ring 2.2s infinite;
+  transition: transform .25s var(--ease), opacity .25s;
+}
+.play-btn:hover { transform: scale(1.08); }
+.play-btn span { position: absolute; left: 34px; top: 26px; border-style: solid; border-width: 17px 0 17px 28px; border-color: transparent transparent transparent var(--navy); }
+.phone-frame.is-playing .play-btn, html:not(.js) .play-btn { opacity: 0; pointer-events: none; }
+@keyframes ring { 70% { box-shadow: 0 0 0 22px rgba(244,180,0,0); } 100% { box-shadow: 0 0 0 0 rgba(244,180,0,0); } }
+@media (max-width: 900px) { .video-grid { grid-template-columns: 1fr; } .phone-frame { transform: none; } }
+
 @media (max-width: 1080px) {
   .tracks { grid-template-columns: repeat(3, 1fr); }
   .annual, .impact, .card-grid--4 { grid-template-columns: repeat(2, 1fr); }

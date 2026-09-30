@@ -231,6 +231,25 @@
     });
   });
 
+  /* ---------- Video: big play button, then native controls ---------- */
+  $$(".video-frame").forEach(function (frame) {
+    var video = $("video", frame);
+    var btn = $(".play-btn", frame);
+    video.controls = false;
+    btn.addEventListener("click", function () {
+      video.controls = true;
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+    video.addEventListener("play", function () { frame.classList.add("is-playing"); video.controls = true; });
+  });
+
+  /* ---------- Share links: include this page's address ---------- */
+  $$("[data-share]").forEach(function (a) {
+    var url = location.href.split("#")[0] + "#video";
+    a.href = "https://wa.me/?text=" + encodeURIComponent(a.getAttribute("data-share") + " " + url);
+  });
+
   /* ---------- Footer year ---------- */
   var year = $("#year");
   if (year) year.textContent = new Date().getFullYear();
