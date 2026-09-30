@@ -1021,3 +1021,24 @@ select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px r
 }
 .bg-navy .program > p, .bg-navy .program p { color: rgba(255,255,255,.8); }
 img.monogram { object-fit: cover; object-position: center; background: var(--paper); }
+
+/* Worldwide Anglican Church shield */
+.brand .brand-shield { width: 44px; height: 46px; margin-left: -4px; padding-left: 10px; box-sizing: content-box; border-left: 1px solid rgba(255,255,255,.25); filter: drop-shadow(0 3px 8px rgba(0,0,0,.35)); }
+.wac-badge { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 10px 20px 10px 12px; border-radius: 18px; text-decoration: none; color: #fff;
+  background: rgba(11,27,63,.55); border: 1px solid rgba(244,180,0,.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: border-color .2s, transform .25s var(--ease); }
+.wac-badge:hover { border-color: var(--gold); transform: translateY(-2px); }
+.wac-badge img { width: 58px; height: auto; filter: drop-shadow(0 6px 12px rgba(0,0,0,.4)); }
+.wac-badge span { display: flex; flex-direction: column; line-height: 1.25; }
+.wac-badge small { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.wac-badge strong { font-family: var(--serif); font-size: 1.2rem; color: var(--gold); }
+.hero .eyebrow { display: flex; width: fit-content; }
+@media (max-width: 640px) {
+  .brand .brand-shield { width: 36px; height: 38px; padding-left: 8px; }
+  .wac-badge img { width: 44px; }
+  .wac-badge strong { font-size: 1.02rem; }
+}
+.brand { flex: none; }
+@media (min-width: 1181px) {
+  .nav-links a { padding: 10px 11px; }
+  .nav-cta { margin-left: 6px; }
+}
