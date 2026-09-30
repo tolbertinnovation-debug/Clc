@@ -8,9 +8,12 @@ It is a fast, static, mobile-first site with no build step. Open `index.html` in
 
 ```
 index.html              Home page
-about.html              Story, mission & vision, emblem, values, beliefs
-leadership.html         Presiding Bishop, clergy roles, path to ordination
-ministries.html         Every ministry in detail
+about.html              History, calling, vision & mission, core values, beliefs
+leadership.html         Founders, House of Bishops, Bishops in America, clergy
+ministries.html         The 25 ministries & departments, grouped
+institutions.html       University, schools, clinics, theology school, academy, chaplaincy
+global.html             Global ministries, Order of Knights & Dames, Honors & Awards, IPEA
+join.html               Membership steps, partnership, forms & resources
 discipleship.html       Equipping The Saints school, modules, registration, FAQ
 events.html             Weekly services, yearly calendar, highlights
 gallery.html            Filterable photo gallery
@@ -29,7 +32,8 @@ assets/img/gallery/     Photos (name.webp full size + name-sm.webp thumbnail)
 | What | Where |
 | --- | --- |
 | Service times | `index.html` (hero cards + Visit section), `events.html`, `contact.html`, and the menu note in each page header |
-| Menu / footer links | The header and footer are the same on every page; change them in all `.html` files |
+| Menu / footer links | The header and footer (with dropdown menus) are the same on every page; change them in all `.html` files |
+| Contact details | Footer on every page, plus `contact.html` and the home page Visit section |
 | Phone / WhatsApp number | Search `231779230549` in `index.html` and `assets/js/main.js` |
 | Events / highlights | `index.html`: the `timeline` list in the `#events` section |
 | Gallery photos | Add `name.webp` + `name-sm.webp` to `assets/img/gallery/`, then add a line to `GALLERY` in `assets/js/main.js` |
