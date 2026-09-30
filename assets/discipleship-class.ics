@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Christ Laborers Church//Discipleship//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:equipping-the-saints-weekly@christlaborers
+DTSTAMP:20260930T000000Z
+DTSTART:20261005T160000Z
+DTEND:20261005T180000Z
+RRULE:FREQ=WEEKLY;BYDAY=MO
+SUMMARY:Equipping The Saints – Discipleship Class
+LOCATION:Great Commission Christian University Campus, Pipeline Supermarket, Paynesville, Liberia
+DESCRIPTION:Bring your Bible, pen, notebook and training manual. Info: +231 779 230 549
+END:VEVENT
+END:VCALENDAR

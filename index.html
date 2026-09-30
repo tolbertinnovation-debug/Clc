@@ -4,22 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Christ Laborers Church | Paynesville, Liberia</title>
-  <meta name="description" content="Christ Laborers Worldwide Anglican Church of Liberia — a Spirit-filled family in Paynesville, established March 10, 2020. Worship with us, grow through the Equipping The Saints School of Discipleship, and become a fisher of men.">
+  <meta name="description" content="Christ Laborers Worldwide Anglican Church of Liberia: a Spirit-filled family in Paynesville, established March 10, 2020. Worship with us, grow through the Equipping The Saints School of Discipleship, and become a fisher of men.">
   <meta name="theme-color" content="#0b1b3f">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/logo-192.png">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Christ Laborers Church — Paynesville, Liberia">
-  <meta property="og:description" content="Fishers of men, laborers in the harvest. Join us for worship, discipleship and revival.">
+  <meta property="og:title" content="Christ Laborers Church | Paynesville, Liberia">
+  <meta property="og:description" content="Christ Laborers Worldwide Anglican Church of Liberia: a Spirit-filled family in Paynesville, established March 10, 2020. Worship with us, grow through the Equipping The Saints School of Discipleship, and become a fisher of men.">
   <meta property="og:image" content="assets/img/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,10 +38,10 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ HEADER ============ -->
+  <!-- ============ HEADER (same on every page) ============ -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Christ Laborers Church — home">
+      <a href="index.html" class="brand" aria-label="Christ Laborers Church home">
         <img src="assets/img/logo.webp" alt="" width="52" height="52">
         <span class="brand-text">
           <strong>Christ Laborers</strong>
@@ -53,16 +50,27 @@
       </a>
 
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#ministries">Ministries</a>
-        <a href="#discipleship">Discipleship</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#visit">Visit</a>
-        <a href="#give" class="btn btn-gold btn-sm nav-cta">Give &amp; Partner</a>
+        <ul class="nav-links">
+          <li class="nav-home"><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="discipleship.html">Discipleship</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Visit</a></li>
+        </ul>
+        <a href="give.html" class="btn btn-gold btn-sm nav-cta">Give &amp; Partner</a>
+        <div class="nav-extra">
+          <p>Sunday Worship 9:00 AM · Discipleship Mon 4:00 PM<br>Pipeline Supermarket, Paynesville</p>
+          <div class="nav-extra-row">
+            <a class="btn btn-ghost" href="tel:+231779230549">Call us</a>
+            <a class="btn btn-ghost" href="https://wa.me/231779230549" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
       </nav>
 
-      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -91,8 +99,8 @@
           <cite>Matthew 4:19</cite>
         </p>
         <div class="hero-actions reveal">
-          <a href="#visit" class="btn btn-gold">Plan Your Visit</a>
-          <a href="#discipleship" class="btn btn-ghost">Join Discipleship Class <span aria-hidden="true">→</span></a>
+          <a href="contact.html" class="btn btn-gold">Plan Your Visit</a>
+          <a href="discipleship.html" class="btn btn-ghost">Join Discipleship Class <span aria-hidden="true">→</span></a>
         </div>
       </div>
 
@@ -168,6 +176,7 @@
               <p>Raising leaders and laborers to carry the Gospel into Liberia and the nations.</p>
             </div>
           </div>
+          <p class="reveal" style="margin-top:26px"><a class="btn btn-outline" href="about.html">Read Our Story</a></p>
         </div>
       </div>
 
@@ -223,7 +232,7 @@
           <div class="clergy-strip reveal">
             <img src="assets/img/gallery/clergy-ordination-sm.webp" alt="The Bishop in red and white vestments standing with newly ordained clergy" loading="lazy">
             <p><strong>A growing clergy team.</strong> Men and women called, trained and ordained to serve
-            God's people with humility and faithfulness.</p>
+            God's people with humility and faithfulness. <a class="text-link" style="color:var(--blue)" href="leadership.html">Meet our leaders →</a></p>
           </div>
         </div>
       </div>
@@ -245,7 +254,7 @@
               <span class="tag">Every Monday</span>
               <h3>Equipping The Saints School</h3>
               <p>Our School of Discipleship, Leadership and Ministry. Practical, Bible-centred training for every believer who wants to go deeper.</p>
-              <a href="#discipleship" class="text-link">Enroll today →</a>
+              <a href="discipleship.html" class="text-link">Enroll today →</a>
             </div>
           </article>
 
@@ -303,6 +312,7 @@
             </div>
           </article>
         </div>
+        <div class="section-more reveal"><a class="btn btn-outline" href="ministries.html">Explore All Ministries</a></div>
       </div>
     </section>
 
@@ -342,7 +352,7 @@
 
           <div class="disc-actions reveal">
             <a class="btn btn-gold" href="https://wa.me/231779230549?text=Hello%2C%20I%20would%20like%20to%20join%20the%20Equipping%20The%20Saints%20discipleship%20class." target="_blank" rel="noopener">Register on WhatsApp</a>
-            <a class="btn btn-ghost" href="tel:+231779230549">Call +231 779 230 549</a>
+            <a class="btn btn-ghost" href="discipleship.html">Learn More</a>
           </div>
         </div>
 
@@ -396,6 +406,7 @@
             <p>Join us as we give thanks for another year of harvest. Details to be announced.</p>
           </li>
         </ol>
+        <div class="section-more reveal"><a class="btn btn-outline" href="events.html">See All Events</a></div>
       </div>
     </section>
 
@@ -407,9 +418,10 @@
           <h2 class="reveal">Moments from the <em>house of God.</em></h2>
         </div>
 
-        <div class="masonry" id="masonry">
+        <div class="masonry" id="masonry" data-limit="9">
           <!-- Populated by main.js from the GALLERY list -->
         </div>
+        <div class="section-more reveal"><a class="btn btn-outline" href="gallery.html">View Full Gallery</a></div>
       </div>
     </section>
 
@@ -423,7 +435,7 @@
             and strengthens the work of the Gospel across Liberia.</p>
           <p class="give-verse">“The harvest truly is plenteous, but the labourers are few.” <cite>Matthew 9:37</cite></p>
           <div class="give-actions">
-            <a class="btn btn-gold" href="tel:+231779230549">Call to Sponsor</a>
+            <a class="btn btn-gold" href="give.html">Ways to Give</a>
             <a class="btn btn-ghost" href="https://wa.me/231779230549?text=Hello%2C%20I%20would%20like%20to%20partner%20with%20Christ%20Laborers%20Church." target="_blank" rel="noopener">Message on WhatsApp</a>
           </div>
         </div>
@@ -431,17 +443,17 @@
         <div class="prayer-card reveal" id="prayer">
           <h3>Send a prayer request</h3>
           <p>We are praying with you. Your request goes straight to our pastoral team on WhatsApp.</p>
-          <form id="prayer-form" novalidate>
+          <form class="wa-form" data-intro="Prayer request:" novalidate>
             <label>
               <span>Your name</span>
-              <input type="text" name="name" autocomplete="name" placeholder="e.g. Grace Kollie">
+              <input type="text" name="Name" autocomplete="name" placeholder="e.g. Grace Kollie">
             </label>
             <label>
               <span>How can we pray for you?</span>
-              <textarea name="request" rows="4" required placeholder="Share as much or as little as you like…"></textarea>
+              <textarea name="Request" rows="4" required placeholder="Share as much or as little as you like…"></textarea>
             </label>
             <button class="btn btn-blue" type="submit">Send Prayer Request</button>
-            <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+            <p class="form-note" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -471,7 +483,7 @@
           </ul>
 
           <div class="reveal">
-            <a class="btn btn-blue" href="https://www.google.com/maps/search/?api=1&query=Pipeline+Supermarket+Paynesville+Liberia" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-blue" href="contact.html">Plan Your Visit</a>
           </div>
         </div>
 
@@ -483,7 +495,7 @@
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ============ FOOTER (same on every page) ============ -->
   <footer class="site-footer">
     <div class="footer-stripes" aria-hidden="true"></div>
     <div class="container footer-grid">
@@ -495,19 +507,20 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#ministries">Ministries</a></li>
-          <li><a href="#events">Highlights</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
       <div>
         <h4>Get Involved</h4>
         <ul>
-          <li><a href="#discipleship">Discipleship School</a></li>
-          <li><a href="#prayer">Prayer Request</a></li>
-          <li><a href="#give">Give &amp; Partner</a></li>
-          <li><a href="#visit">Plan a Visit</a></li>
+          <li><a href="discipleship.html">Discipleship School</a></li>
+          <li><a href="give.html#prayer">Prayer Request</a></li>
+          <li><a href="give.html">Give &amp; Partner</a></li>
+          <li><a href="contact.html">Plan a Visit</a></li>
         </ul>
       </div>
       <div>
