@@ -791,6 +791,27 @@ select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px r
 @keyframes ring { 70% { box-shadow: 0 0 0 22px rgba(244,180,0,0); } 100% { box-shadow: 0 0 0 0 rgba(244,180,0,0); } }
 @media (max-width: 900px) { .video-grid { grid-template-columns: 1fr; } .phone-frame { transform: none; } }
 
+/* Featured message (landscape video) */
+.message-card { display: grid; grid-template-columns: 1.55fr 1fr; background: var(--paper); border: 1px solid var(--line); border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); }
+.wide-frame { position: relative; align-self: stretch; display: flex; align-items: center; background:
+  radial-gradient(ellipse at 50% 50%, rgba(26,63,176,.45), transparent 70%), var(--navy); }
+.wide-frame video { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; display: block; background: #000; }
+.wide-frame.is-playing .play-btn { opacity: 0; pointer-events: none; }
+.message-info { padding: clamp(24px, 3vw, 36px); border-left: 6px solid var(--red); }
+.message-info h3 { font-size: 1.35rem; line-height: 1.25; margin: 6px 0 16px; }
+.message-info dl { margin: 0; display: grid; gap: 0; }
+.message-info dl div { display: grid; grid-template-columns: 84px 1fr; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); font-size: .92rem; }
+.message-info dt { font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--red); padding-top: 3px; }
+.message-info dd { margin: 0; font-weight: 600; }
+.message-verse { margin: 16px 0 0; font-family: var(--serif); font-style: italic; color: var(--navy); }
+.message-verse cite { font-family: var(--sans); font-style: normal; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-left: 6px; }
+.section-more .btn + .btn { margin-left: 8px; }
+@media (max-width: 960px) {
+  .message-card { grid-template-columns: 1fr; }
+  .message-info { border-left: 0; border-top: 6px solid var(--red); }
+}
+@media (max-width: 640px) { .section-more .btn { margin: 6px 4px !important; } }
+
 @media (max-width: 1080px) {
   .tracks { grid-template-columns: repeat(3, 1fr); }
   .annual, .impact, .card-grid--4 { grid-template-columns: repeat(2, 1fr); }
