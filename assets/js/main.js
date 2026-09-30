@@ -12,7 +12,7 @@
   // and listing it here. Categories: worship, revival, ordination, celebration.
   var GALLERY = [
     ["sanctuary-sermon", "The Word proclaimed in our sanctuary", "worship"],
-    ["clergy-ordination", "Our Bishop with newly ordained clergy", "ordination"],
+    ["clergy-team", "Our Bishop with newly ordained clergy", "ordination"],
     ["celebration-service", "A joyful celebration service", "celebration"],
     ["bishop-preaching", "Preaching with passion and conviction", "worship"],
     ["teaching-session", "Teaching during our revival meeting", "revival"],
