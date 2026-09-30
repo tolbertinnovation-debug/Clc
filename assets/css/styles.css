@@ -121,7 +121,7 @@ p { margin: 0 0 1em; }
 }
 .nav-links a:hover { opacity: 1; background: rgba(255,255,255,.12); }
 .nav-links a[aria-current="page"] { opacity: 1; background: rgba(255,255,255,.14); box-shadow: inset 0 -2px 0 var(--gold); }
-.nav-links .nav-home { display: none; }
+.nav-links .nav-home { display: block; }
 .nav-cta { margin-left: 10px; white-space: nowrap; }
 .nav-extra { display: none; }
 
@@ -1110,3 +1110,10 @@ img.monogram { object-fit: cover; object-position: center; background: var(--pap
   .nav-toggle { flex: none; }
 }
 @media (max-width: 420px) { .brand-text strong { font-size: clamp(.8rem, 3.9vw, 1.04rem); letter-spacing: 0; } .brand { gap: 7px; } }
+@media (min-width: 1181px) and (max-width: 1360px) {
+  .nav-links a { padding: 9px 8px; font-size: .86rem; }
+  .nav-links .has-sub > a::after { margin-left: 5px; }
+  .nav-cta { padding: 10px 14px; font-size: .86rem; margin-left: 4px; }
+  .brand-text small { display: none; }
+  .brand { gap: 10px; }
+}
