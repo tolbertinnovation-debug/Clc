@@ -741,6 +741,24 @@ select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px r
   background: radial-gradient(ellipse at 50% 0%, rgba(26,63,176,.6), transparent 60%), var(--navy); }
 .notfound strong { font-family: var(--serif); font-size: clamp(6rem, 20vw, 12rem); line-height: 1; color: var(--gold); display: block; }
 
+/* Bishops in America */
+.bishops { display: grid; gap: 24px; max-width: 920px; margin-inline: auto; }
+.bishop-card {
+  display: grid; grid-template-columns: 340px 1fr; align-items: center; overflow: hidden;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow);
+}
+.bishop-photo { position: relative; height: 100%; }
+.bishop-photo img { width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 20%; }
+.bishop-photo::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 6px; background: linear-gradient(var(--red), var(--gold), var(--blue)); }
+.bishop-info { padding: clamp(28px, 4vw, 48px); }
+.bishop-role { font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin: 6px 0 4px; }
+.bishop-info h3 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin-bottom: 12px; }
+.bishop-info p:last-child { color: var(--muted); margin: 0; }
+@media (max-width: 720px) {
+  .bishop-card { grid-template-columns: 1fr; }
+  .bishop-photo::after { top: auto; left: 0; width: auto; height: 6px; background: linear-gradient(90deg, var(--red), var(--gold), var(--blue)); }
+}
+
 @media (max-width: 1080px) {
   .tracks { grid-template-columns: repeat(3, 1fr); }
   .annual, .impact, .card-grid--4 { grid-template-columns: repeat(2, 1fr); }
