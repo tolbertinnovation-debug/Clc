@@ -1042,3 +1042,11 @@ img.monogram { object-fit: cover; object-position: center; background: var(--pap
   .nav-links a { padding: 10px 11px; }
   .nav-cta { margin-left: 6px; }
 }
+
+/* Featured team photo */
+.team-photo { margin: 0 auto clamp(40px, 6vw, 64px); max-width: 1000px; }
+.team-photo button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); }
+.team-photo img { width: 100%; transition: transform .8s var(--ease); }
+.team-photo button:hover img { transform: scale(1.03); }
+.team-photo figcaption { text-align: center; color: var(--muted); font-size: .95rem; margin-top: 14px; }
+.team-photo figcaption strong { color: var(--navy); }

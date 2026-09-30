@@ -13,6 +13,7 @@
   var GALLERY = [
     ["sanctuary-sermon", "The Word proclaimed in our sanctuary", "worship"],
     ["clergy-team", "Our Bishop with newly ordained clergy", "ordination"],
+    ["pastors-ministers", "Our Pastors and Ministers", "ordination"],
     ["clergy-50-days", "Clergy commissioned during 50 Days With the Lord", "ordination"],
     ["pastor-frances-togbah", "Pastor Frances D. Togbah, Resident Pastor", "worship"],
     ["celebration-service", "A joyful celebration service", "celebration"],
