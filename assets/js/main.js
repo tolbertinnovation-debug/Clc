@@ -19,7 +19,7 @@
     ["ministers-circle", "Pastors and ministers in fellowship", "revival"],
     ["ministers-fellowship", "Sharing and prayer among ministers", "revival"],
     ["ministers-meeting", "Ministers in session", "revival"],
-    ["clergy-50-days", "Clergy commissioned during 50 Days With the Lord", "ordination"],
+    ["clergy-50-days", "Clergy commissioned during A Time With the Lord", "ordination"],
     ["pastor-frances-togbah", "Taking notes during a teaching session", "worship"],
     ["rev-francess-togbah", "Reverend Mrs. Francess D. Togbah, Co-Founder & Resident Pastor", "celebration"],
     ["celebration-service-hd", "A joyful celebration service", "celebration"],

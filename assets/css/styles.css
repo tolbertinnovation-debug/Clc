@@ -1117,3 +1117,14 @@ img.monogram { object-fit: cover; object-position: center; background: var(--pap
   .brand-text small { display: none; }
   .brand { gap: 10px; }
 }
+
+/* Full annual calendar (9 entries) */
+.annual--full { grid-template-columns: repeat(3, 1fr); }
+.month { position: relative; }
+.month-tag { position: absolute; top: 18px; right: 18px; font: 800 .64rem var(--sans); letter-spacing: .14em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; background: rgba(244,180,0,.16); color: var(--gold); border: 1px solid rgba(244,180,0,.35); }
+.annual--full .month time { font-size: 1.35rem; padding-right: 90px; }
+@media (max-width: 1080px) { .annual--full { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .annual--full { grid-template-columns: 1fr; } }
+/* Keep the site's own colors when a phone browser forces dark mode */
+:root { color-scheme: only light; }
+.bg-navy .section-head p:last-child { color: rgba(255,255,255,.78); }
