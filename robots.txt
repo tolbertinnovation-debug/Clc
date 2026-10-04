@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clwac-church.org/sitemap.xml
