@@ -259,6 +259,22 @@
     a.href = "https://wa.me/?text=" + encodeURIComponent(a.getAttribute("data-share") + " " + url);
   });
 
+  /* ---------- Copy buttons (giving details) ---------- */
+  $$(".copy-btn").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var text = b.getAttribute("data-copy");
+      function done() { b.textContent = "Copied ✓"; b.classList.add("copied"); setTimeout(function () { b.textContent = "Copy"; b.classList.remove("copied"); }, 1800); }
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+      else fallback();
+      function fallback() {
+        var t = document.createElement("textarea"); t.value = text; t.style.position = "fixed"; t.style.opacity = "0";
+        document.body.appendChild(t); t.select();
+        try { document.execCommand("copy"); done(); } catch (e) {}
+        document.body.removeChild(t);
+      }
+    });
+  });
+
   /* ---------- Footer year ---------- */
   var year = $("#year");
   if (year) year.textContent = new Date().getFullYear();

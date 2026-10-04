@@ -1128,3 +1128,15 @@ img.monogram { object-fit: cover; object-position: center; background: var(--pap
 /* Keep the site's own colors when a phone browser forces dark mode */
 :root { color-scheme: only light; }
 .bg-navy .section-head p:last-child { color: rgba(255,255,255,.78); }
+
+/* Giving details */
+.give-details { margin: 12px 0 0; display: grid; }
+.gd-row { display: grid; grid-template-columns: 112px 1fr; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid rgba(255,255,255,.12); }
+.gd-row dt { font: 800 .7rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.gd-row dd { margin: 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 700; color: #fff; word-break: break-word; }
+.gd-row dd span { font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.copy-btn { flex: none; border: 1px solid rgba(244,180,0,.5); background: rgba(244,180,0,.1); color: var(--gold); font: 800 .72rem var(--sans); letter-spacing: .06em; padding: 6px 12px; border-radius: 999px; cursor: pointer; transition: background .2s, color .2s; }
+.copy-btn:hover { background: var(--gold); color: var(--navy); }
+.copy-btn.copied { background: var(--gold); color: var(--navy); }
+.gd-note { margin: 14px 0 0; font-size: .9rem; color: rgba(255,255,255,.78); }
+@media (max-width: 420px) { .gd-row { grid-template-columns: 1fr; gap: 2px; } }
